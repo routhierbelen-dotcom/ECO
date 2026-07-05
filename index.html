@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Diamante Joyas | Joyas, Accesorios y Bisutería en Cartagena</title>
+    <meta name="description" content="Descubre la exclusividad de El Diamante Joyas en Cartagena. Encuentra joyas, accesorios y bisutería de alta calidad. Cotiza tu joya personalizada hoy.">
+    <meta name="keywords" content="joyas Cartagena, bisutería, accesorios, anillos, cadenas, El Diamante Joyas">
+    <link rel="canonical" href="https://tudominio.com/">
+    
+    <meta property="og:title" content="El Diamante Joyas | Elegancia en Cartagena">
+    <meta property="og:description" content="Encuentra las mejores joyas, accesorios y bisutería. Visítanos o cotiza en línea.">
+    <meta property="og:type" content="website">
+    
+    <style>
+        :root {
+            --primary: #D4AF37; /* Dorado cálido */
+            --primary-dark: #b5952f;
+            --dark: #1A1A1A;
+            --light: #F9F9F9;
+            --text: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Navegación */
+        header {
+            background-color: var(--dark);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url('https://via.placeholder.com/1920x1080/1A1A1A/D4AF37?text=El+Diamante+Joyas') center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            background-color: var(--primary);
+            color: var(--dark);
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--primary-dark);
+        }
+
+        /* Secciones Generales */
+        .section {
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--dark);
+            margin-bottom: 40px;
+        }
+
+        /* Beneficios y Servicios (Grid) */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+
+        /* Transparencia e Información */
+        .info-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .info-container p {
+            margin-bottom: 10px;
+        }
+
+        /* Formulario */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: #ccc;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">El Diamante Joyas</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Elegancia y Exclusividad en Cada Detalle</h1>
+            <p>Descubre nuestra colección de joyas, accesorios y bisutería diseñados para resaltar tu estilo único.</p>
+            <a href="#contacto" class="cta-btn">Cotiza tu Joya Ideal</a>
+        </section>
+
+        <section class="section" style="background-color: white;">
+            <h2 class="section-title">¿Por qué elegirnos?</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Alta Calidad</h3>
+                    <p>Seleccionamos cuidadosamente nuestros materiales para garantizar brillo y durabilidad.</p>
+                </div>
+                <div class="card">
+                    <h3>Diseños Únicos</h3>
+                    <p>Piezas de bisutería y accesorios con estilos exclusivos que marcan tendencia.</p>
+                </div>
+                <div class="card">
+                    <h3>Atención Personalizada</h3>
+                    <p>Te asesoramos para encontrar o crear la joya perfecta para ti o para regalar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Nuestra Colección</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Joyería Clásica</h3>
+                    <p>Anillos, cadenas y pulseras elaboradas con los más altos estándares.</p>
+                </div>
+                <div class="card">
+                    <h3>Bisutería Fina</h3>
+                    <p>Accesorios versátiles y modernos para complementar tu atuendo diario.</p>
+                </div>
+                <div class="card">
+                    <h3>Regalos Especiales</h3>
+                    <p>El detalle perfecto para aniversarios, cumpleaños o compromisos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background-color: white;">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <p><em>"Encontré exactamente el accesorio que buscaba. Excelente calidad y una atención inmejorable en Cartagena."</em></p>
+                    <p><strong>- Cliente Satisfecho</strong></p>
+                </div>
+                <div class="card">
+                    <p><em>"Diseños hermosos y a precios justos. Totalmente recomendados para regalos especiales."</em></p>
+                    <p><strong>- Cliente Satisfecho</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Información de Contacto y Visita</h2>
+            <div class="info-container">
+                <p><strong>Responsable:</strong> Jorly Luis Balzan Muñoz</p>
+                <p><strong>Dirección:</strong> Tv. 73 #31D-18, Cartagena, Colombia</p>
+                <p><strong>Teléfono:</strong> <a href="tel:+573016667345" style="color: var(--primary-dark);">301 666 7345</a></p>
+                <p><strong>Correo Electrónico:</strong> <a href="mailto:routhierbelen@gmail.com" style="color: var(--primary-dark);">routhierbelen@gmail.com</a></p>
+                <p><strong>Horario de Atención:</strong> Todos los días de la semana, de 8:00 am a 5:00 pm</p>
+            </div>
+        </section>
+
+        <section class="section" id="contacto" style="background-color: white;">
+            <h2 class="section-title">Solicita Información o Cotización</h2>
+            <form class="contact-form" id="leadForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono (Opcional)</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">¿Qué pieza de joyería estás buscando?</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="cta-btn" style="width: 100%;">Enviar Solicitud</button>
+                <p style="font-size: 0.8rem; margin-top: 15px; text-align: center;">Tus datos están seguros. Consulta nuestra <a href="politica-de-privacidad.html">Política de Privacidad</a>.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 El Diamante Joyas. Operado por Jorly Luis Balzan Muñoz. Todos los derechos reservados.</p>
+        <div style="margin-top: 15px;">
+            <a href="politica-de-privacidad.html">Política de Privacidad</a> | 
+            <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Lógica para enviar el formulario a tu servidor o CRM
+            alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+            this.reset();
+        });
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "JewelryStore",
+      "name": "El Diamante Joyas",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Tv. 73 #31D-18",
+        "addressLocality": "Cartagena",
+        "addressCountry": "CO"
+      },
+      "telephone": "+573016667345",
+      "email": "routhierbelen@gmail.com",
+      "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 08:00-17:00",
+      "owner": {
+        "@type": "Person",
+        "name": "Jorly Luis Balzan Muñoz"
+      }
+    }
+    </script>
+
+</body>
+</html>
